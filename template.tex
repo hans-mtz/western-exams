@@ -1,0 +1,211 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  12pt,
+  addpoints]{exam}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+% TODO: Add custom LaTeX header directives here
+\usepackage[randomize,nokeeplast]{exam-randomizechoices}
+\setrandomizerseed{999}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{graphicx}
+\graphicspath{ {./figures/} }
+% \usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Avoid questions from breaking
+\usepackage{etoolbox}
+\BeforeBeginEnvironment{randomizechoices}{\par\nopagebreak\minipage{\linewidth}}
+\AfterEndEnvironment{randomizechoices}{\endminipage}
+
+
+%
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Midterm 1},
+  pdfauthor={Hans Martinez},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\begin{document}
+\begin{titlepage}
+    \centering
+    {\LARGE Western University\par}
+    {\Large Department of Economics\par}
+    \vspace{1cm}
+    {\large Intermediate Microeconomic Theory II \par
+    ECON2151B002 \par
+    Midterm 1 \par
+    V333 \par}
+    \vspace{1.5cm}
+    Instructor: Hans Martinez \hfill Date:\enspace\rule{4cm}{0.4pt}\par
+    \vspace{2cm}
+    \raggedleft
+    \makebox[\textwidth]{Name:\enspace\hrulefill\enspace Student No.:\enspace\rule{4cm}{0.4pt}}
+    \vfill
+    {\centering 
+        {\bf Instructions \par}
+    }
+    \raggedleft
+    \begin{itemize}
+        \item You will have 2 hours to complete the exam.
+        \item Make sure to check that your scantron version matches your exam version.
+        \item Make sure to write your name and student number on the exam and to fill in your student number in the scantron.
+        \item You may have pencils, erasers, your student card, and a non-graphing non-programmable calculator out of its case on your desk. All other items including watches, and cell-phones must be left in your bag at the front of the examination room.
+        \item Please make sure all electronic devices (cell phones, laptops, etc.) are turned off before storing them at the front of the examination room.
+        \item When you have finished, please hand in your exam, scrap paper, and scantron. Failure to do so will result in a mark of zero for the exam.
+        \item Please make sure that you clearly label all graphs and drawings to get the full marks.
+        \item Good luck!
+    \end{itemize}
+\end{titlepage}
+\newpage
+
+% \begin{center}
+%     \fbox{\fbox{\parbox{5.5in}{\centering
+%           Answer the questions in the spaces provided on the
+%           question sheets.  If you run out of room for an answer,
+%           continue on the back of the page.}}}
+% \end{center}
+% \vspace{0.1in}
+% \makebox[\textwidth]{Name and section:\enspace\hrulefill}
+% \vspace{0.2in}
+% \makebox[\textwidth]{Instructor’s name:\enspace\hrulefill}
+\section{Multiple Choice Questions}\label{multiple-choice-questions}
+
+\hrulefill{}
+
+\begin{questions}
+
+\question[1]{} One of these things is not like the others; one of these
+things is not the same. Which one is different?
+
+\begin{randomizechoices}
+\choice{} John \choice{} Paul \choice{} Ringo \choice{} George
+\CorrectChoice{} Socrates
+
+\end{randomizechoices}
+
+\begin{solution}
+This is a description of the solution
+\end{solution}
+
+\question[1]{One of these things is not like the others; one of these
+things is not the same. Which one is different?}
+
+\begin{randomizechoices}
+\choice{John} \choice{Paul} \choice{George} \choice{Ringo}
+\CorrectChoice{Socrates}
+
+\end{randomizechoices}
+
+\begin{solution}
+This is another description of the solution
+\end{solution}
+
+\question[1]{} One of these things is not like the others; one of these
+things is not the same. Which one is different?
+
+\begin{randomizechoices}
+\choice John \choice Paul \choice Ringo \choice George
+\CorrectChoice Socrates
+
+\end{randomizechoices}
+
+\begin{solution}
+This is a description of the solution
+\end{solution}
+
+\question[5]One of these things is not like the others; one of these
+things is not the same. Which one is different?
+
+\begin{randomizeoneparcheckboxes}
+\choice John
+\choice Paul
+\choice George
+\choice Ringo
+\CorrectChoice Socrates
+\end{randomizeoneparcheckboxes}
+
+\begin{solution}
+
+Explanation of hard latex question.
+
+\end{solution}
+
+\end{questions}
+
+\newpage{}
+
+\section{Key Table V333}\label{key-table}
+
+\hrulefill{}
+
+\printkeytable{}
+
+
+
+\end{document}

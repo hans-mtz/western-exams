@@ -1,0 +1,116 @@
+---
+title: Midterm 1
+author: Hans Martinez
+date: last-modified
+format:
+  western-exams-pdf:
+    keep-tex: true
+    course-name: Intermediate Microeconomic Theory II
+    course-code: ECON2151B002
+    exam-version: V111
+    set-seed: 777
+    # classoption: answers #uncomment to print answers, useful in exam design phase
+    randomize-choices: randomize #randomize to randomize choices; norandomize for not randomizing choices
+filters: 
+  - latex-environment
+environments: [questions, randomizechoices, solution]
+commands: [question, choice, CorrectChoice, printkeytable, hrulefill]
+print-keytable: false
+---
+
+## Multiple Choice Questions
+
+[]{.hrulefill}
+
+:::: {.questions}
+
+[]{.question options="1"}
+One of these things is not like the others; one of these
+things is not the same. Which one is different?
+
+::: {.randomizechoices}
+
+[]{.choice} John
+[]{.choice} Paul
+[]{.choice} Ringo
+[]{.choice} George
+[]{.CorrectChoice} Socrates
+
+:::
+
+::: {.solution}
+
+This is a description of the solution
+
+:::
+
+[One of these things is not like the others; one of these
+things is not the same. Which one is different?]{.question options="1"}
+
+::: {.randomizechoices}
+
+[John]{.choice}
+[Paul]{.choice}
+[George]{.choice}
+[Ringo]{.choice}
+[Socrates]{.CorrectChoice}
+
+:::
+
+::: {.solution}
+
+This is another description of the solution
+
+:::
+
+[]{.question options="1"}
+One of these things is not like the others; one of these
+things is not the same. Which one is different?
+
+::: {.randomizechoices}
+
+\choice John
+\choice Paul
+\choice Ringo
+\choice George
+\CorrectChoice Socrates
+
+:::
+
+::: {.solution}
+
+This is a description of the solution
+
+:::
+
+\question[5]
+One of these things is not like the others; one of these
+things is not the same. Which one is different?
+
+\begin{randomizeoneparcheckboxes}
+\choice John
+\choice Paul
+\choice George
+\choice Ringo
+\CorrectChoice Socrates
+\end{randomizeoneparcheckboxes}
+
+\begin{solution}
+
+Explanation of hard latex question.
+
+\end{solution}
+
+::::
+
+{{< pagebreak >}}
+
+::: {.hidden unless-meta="print-keytable"}
+
+## Key Table {{< meta exam-version >}}
+
+[]{.hrulefill}
+
+[]{.printkeytable}
+
+:::

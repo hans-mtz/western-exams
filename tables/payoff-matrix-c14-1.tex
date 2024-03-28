@@ -1,0 +1,14 @@
+\documentclass{standalone}
+\usepackage{multirow}
+\begin{document}
+\begin{tabular}{rccccc}
+& & \multicolumn{4}{c}{\textbf{XYZ}} \\
+& & \textbf{20} & \textbf{24} & \textbf{28} & \textbf{32}  \\ 
+\cline{3-6}
+\multirow{2}{*}{\textbf{ABC}}& \textbf{20} & \multicolumn{1}{|c|}{60, 60} & \multicolumn{1}{c|}{120, 10} \\ 
+\cline{3-6}
+& \textbf{22} & \multicolumn{1}{|c|}{10, 120} & \multicolumn{1}{c|}{50, 50} \\ 
+\cline{3-6}\\
+\end{tabular}
+\end{document}
+

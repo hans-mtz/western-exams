@@ -1,0 +1,9 @@
+::: {.hidden unless-meta="print-keytable"}
+
+## Key Table {{< meta exam-version >}}
+
+[]{.hrulefill}
+
+[]{.printkeytable}
+
+:::

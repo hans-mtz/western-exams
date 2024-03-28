@@ -1,0 +1,46 @@
+# Western-exams Format
+
+The western-exams format will shuffle the order of the choice answers randomly in an MCQ exam according to a prespecified seed. 
+
+This format is a customized wrapper for the \LaTeX document class [`exams`](https://ctan.org/pkg/exam) using the [`randomizechoices`](https://ctan.org/pkg/exam-randomizechoices) package. 
+
+## Installing
+
+```bash
+quarto use template hans-mtz/western-exams
+```
+
+This will install the extension and create a template qmd file that you can use as a starting place for your article.
+
+## Using
+
+You can use \LaTeX formatting or the quarto wrappers using the filter `latex-environment`. Check the template to see examples of questions.
+
+\LaTeX compatibility is handy because you can use your old exams. You can mix the formats, quarto will take care of it.
+
+## Making Exam Versions
+
+Change `set-seed` yaml parameter to have different exam versions. You can name your version by changing `exam-version` yaml parameter.
+
+For example, to run version V111 associated with set-seed 777, you can run:
+
+```bash
+quarto render template.qmd -o template-V111.pdf -M exam-version:V111 -M set-seed:777
+```
+To render the answer keys use the same set-seed and add set the `print-keytable` yaml parameter to `true`. 
+
+```bash
+quarto render template.qmd -o template-AK-V111.pdf -M exam-version:V111 -M set-seed:777 -M print-keytable:true
+```
+
+### GNU Makefile
+
+I include a makefile so you can just run from your terminal (iOS) `make exams` and the command will generate three different versions of your exam.
+
+Run `make answers` and it will generate the corresponding answer keys.
+
+The default is to assign `set-seed` 777 to V111, 888 to V222 and 999 to V333. You can change your set-seed and the number of versions in the `makefile` file by changing the variables `VERSIONS` and `SEEDS`. The makefile will associate the seeds with the versions in order. The first seed with the first version and so on.
+
+## MCQ Exam Assitant - GPT
+
+Combine this template with the GPT [*MCQ Exam Assitant*](https://chat.openai.com/g/g-XSiym5xEf-mcq-exam-assistant) to increase your productivity.
