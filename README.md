@@ -10,13 +10,13 @@ This format is a customized wrapper for the $\LaTeX$ document class [`exams`](ht
 quarto use template hans-mtz/western-exams
 ```
 
-This will install the extension and create a template qmd file that you can use as a starting place for your article.
+This will install the extension and create a template quarto file that you can use as a starting place for your exam.
 
 ## Using
 
-You can use \LaTeX formatting or the quarto wrappers using the filter `latex-environment`. Check the template to see examples of questions.
+You can use $\LaTeX$ formatting or the quarto wrappers using the filter `latex-environment`. Check the template to see examples of questions.
 
-\LaTeX compatibility is handy because you can use your old exams. You can mix the formats, quarto will take care of it.
+$\LaTeX$ compatibility is handy because you can use your old exams. You can mix the formats, quarto will take care of it.
 
 ## Making Exam Versions
 
@@ -35,11 +35,18 @@ quarto render template.qmd -o template-AK-V111.pdf -M exam-version:V111 -M set-s
 
 ### GNU Makefile
 
-I include a makefile so you can just run from your terminal (iOS) `make exams` and the command will generate three different versions of your exam.
+I include a `makefile` file so you can render three different versions of your exams with just one line of code.
 
-Run `make answers` and it will generate the corresponding answer keys.
+```bash
+make all
+```
+To render the corresponding answer keys run
 
-The default is to assign `set-seed` 777 to V111, 888 to V222 and 999 to V333. You can change your set-seed and the number of versions in the `makefile` file by changing the variables `VERSIONS` and `SEEDS`. The makefile will associate the seeds with the versions in order. The first seed with the first version and so on.
+```bash
+make answers
+```
+
+The default is to assign `set-seed` 777 to V111, 888 to V222 and 999 to V333. You can change your set-seed and the number of versions in the `makefile` file by changing the variables `VERSIONS` and `SEEDS`. The `makefile` will associate the seeds with the versions in order. The first seed with the first version and so on.
 
 ## MCQ Exam Assitant - GPT
 
