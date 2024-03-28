@@ -1,8 +1,8 @@
-# Western-exams Format
+# Western-Exams
 
-The western-exams format will shuffle the order of the choice answers randomly in an MCQ exam according to a prespecified seed. 
+The quarto `western-exams` format will shuffle the order of the choice answers randomly in an MCQ exam according to a prespecified seed. 
 
-This format is a customized wrapper for the \LaTeX document class [`exams`](https://ctan.org/pkg/exam) using the [`randomizechoices`](https://ctan.org/pkg/exam-randomizechoices) package. 
+This format is a customized wrapper for the $\LaTeX$ document class [`exams`](https://ctan.org/pkg/exam) using the [`randomizechoices`](https://ctan.org/pkg/exam-randomizechoices) package. 
 
 ## Installing
 
