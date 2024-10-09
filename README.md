@@ -10,7 +10,7 @@ This format is a customized wrapper for the $\LaTeX$ document class [`exams`](ht
 quarto use template hans-mtz/western-exams
 ```
 
-This will install the extension and create a template quarto file that you can use as a starting place for your exam.
+In your terminal, this command will install the extension and create a template quarto file that you can use as a starting place for your exam.
 
 ## Using
 
@@ -46,8 +46,12 @@ To render the corresponding answer keys run
 make answers
 ```
 
-The default is to assign `set-seed` 777 to V111, 888 to V222 and 999 to V333. You can change your set-seed and the number of versions in the `makefile` file by changing the variables `VERSIONS` and `SEEDS`. The `makefile` will associate the seeds with the versions in order. The first seed with the first version and so on.
+The default is to assign `set-seed` 666 to A, 777 to B, 888 to C, and 999 to D. You can change your set-seed and the number of versions in the `makefile` file by changing the variables `VERSIONS` and `SEEDS`. The `makefile` will associate the seeds with the versions in order. The first seed with the first version and so on.
 
 ## MCQ Exam Assitant - GPT
 
 Combine this template with the GPT [*MCQ Exam Assitant*](https://chat.openai.com/g/g-XSiym5xEf-mcq-exam-assistant) to increase your productivity.
+
+## Gradescope
+
+This version's instructions are updated to be used with Gradescope Bubble Sheets.
