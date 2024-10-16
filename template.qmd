@@ -7,8 +7,8 @@ format:
     keep-tex: true
     course-name: Intermediate Microeconomic Theory II
     course-code: ECON2151B002
-    exam-version: V111
-    set-seed: 777
+    exam-version: A
+    set-seed: 666
     # classoption: answers #uncomment to print answers, useful in exam design phase
     randomize-choices: randomize #randomize to randomize choices; norandomize for not randomizing choices
 filters: 
