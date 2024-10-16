@@ -22,7 +22,7 @@ $\LaTeX$ compatibility is handy because you can use your old exams. You can mix 
 
 Change `set-seed` yaml parameter to have different exam versions. You can name your version by changing `exam-version` yaml parameter.
 
-For example, to run version V111 associated with set-seed 777, you can run:
+For example, to run version A associated with set-seed 666, you can run:
 
 ```bash
 quarto render template.qmd -o template-V111.pdf -M exam-version:V111 -M set-seed:777
@@ -30,7 +30,7 @@ quarto render template.qmd -o template-V111.pdf -M exam-version:V111 -M set-seed
 To render the answer keys use the same set-seed and add set the `print-keytable` yaml parameter to `true`. 
 
 ```bash
-quarto render template.qmd -o template-AK-V111.pdf -M exam-version:V111 -M set-seed:777 -M print-keytable:true
+quarto render template.qmd -o template-A-AK.pdf -M exam-version:A -M set-seed:666 -M print-keytable:true
 ```
 
 ### GNU Makefile
@@ -38,7 +38,7 @@ quarto render template.qmd -o template-AK-V111.pdf -M exam-version:V111 -M set-s
 I include a `makefile` file so you can render three different versions of your exams with just one line of code.
 
 ```bash
-make all
+make
 ```
 To render the corresponding answer keys run
 

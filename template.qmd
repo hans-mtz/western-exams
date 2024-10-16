@@ -105,7 +105,7 @@ Explanation of hard latex question.
 
 {{< pagebreak >}}
 
-::: {.hidden unless-meta="print-keytable"}
+::: {.content-hidden unless-meta="print-keytable"}
 
 ## Key Table {{< meta exam-version >}}
 
